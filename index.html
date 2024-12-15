@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroDLL | Link Shortener</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <header>
+            <div class="logo-area">
+                <i class="fa-solid fa-bolt icon-gradient"></i>
+                <h1>AeroDLL</h1>
+            </div>
+            <p class="subtitle">Gelişmiş & Hızlı URL Kısaltıcı</p>
+        </header>
+
+        <div class="main-content">
+            <div class="input-wrapper">
+                <i class="fa-solid fa-link input-icon"></i>
+                <input type="url" id="originalUrl" placeholder="Uzun bağlantıyı buraya yapıştır..." required>
+            </div>
+            <button onclick="shortenUrl()" id="shortenBtn">
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Kısalt
+            </button>
+        </div>
+
+        <div class="result-container" id="resultContainer">
+            <div class="success-box">
+                <span id="shortLink"></span>
+                <button onclick="copyToClipboard()" class="copy-btn" title="Kopyala">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Developer by <strong>Emirhan Bıçakcı</strong></p>
+            <div class="social-links">
+                <a href="https://github.com/AeroDLL" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/emirhan-b%C4%B1%C3%A7akc%C4%B1-17bab7386/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://aerodll.netlify.app/" target="_blank" title="Website"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
